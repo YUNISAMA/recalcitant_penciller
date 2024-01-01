@@ -4,7 +4,7 @@ title: "Duke Institute for Brain Sciences Methods Meetings"
 description: "Workshops and tutorials on  methods, statistics, and models in neuroscience."
 logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/logo.jpg'
-baseurl: 
+baseurl: root
 include: ["_pages"]
 permalink: /:title/
 future: true
