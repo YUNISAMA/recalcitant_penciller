@@ -6,7 +6,8 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
-
+ruby '3.1.4'
+gem 'ruby_dep', '>= 1.5.0'
 # If you have any plugins, put them here!
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 group :jekyll_plugins do
