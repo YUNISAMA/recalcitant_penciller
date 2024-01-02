@@ -1,15 +1,17 @@
+# Gemfile
+
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
-#
-#     bundle exec jekyll serve
-#
+# 指定你想要的Ruby版本
 ruby '3.1.4'
-gem 'ruby_dep', '>= 1.5.0'
-# If you have any plugins, put them here!
+
+# 显式指定与Ruby 3.1.4兼容的ruby_dep版本
+gem 'ruby_dep', '~> 1.5'
+
+# 如果在Windows平台上，添加wdm gem
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+# Jekyll插件
 group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-sitemap'
@@ -19,3 +21,4 @@ group :jekyll_plugins do
     gem 'kramdown'
     gem 'rouge'
 end
+
